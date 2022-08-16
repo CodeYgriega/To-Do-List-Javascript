@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 60%;
+    height: 100vh;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 30px;
+}
+
+div{
+    width: 100%;
+    display: flex;
+}
+input{
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid rgba(18, 5, 194, 0.5);
+    border-top-left-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px rgba(18, 5, 194, 0.5);
+}
+
+button{
+    width: 35%;
+    border: none;
+    background-color: rgba(18, 5, 194, 0.5);
+    color: white;
+    transition: all .5s;
+    border-bottom-right-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    color: rgba(18, 5, 194, 0.5);
+    background-color: white;
+    border: 1px solid rgba(18, 5, 194, 0.5);
+}
+
+input,button{
+    height: 2.5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid rgba(18, 5, 194, 0.5);
+    padding: 7px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(18, 5, 194, 0.5);
+}
+
+li button{
+    border-radius: 10px;
+    height: 2rem;
+}
+
+.tarea-completada{
+    text-decoration:line-through;
+    background-color: rgba(143, 140, 140, 0.507);
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        width: 65%;
+    }
+    .div{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    main{
+        width: 80%;
+    }
+    .div{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    main{
+        width: 100%;
+    }
+    .div{
+        width: 70%;
+    }
+}
